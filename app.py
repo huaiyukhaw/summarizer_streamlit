@@ -15,7 +15,6 @@ if submitted:
                             min_length=30, do_sample=False)[0]["summary_text"]
 
     col2.write(prediction)
-    col2.markdown(f"[Tweet this](https://twitter.com/intent/tweet?text={prediction.replace(' ', '%20')})", unsafe_allow_html=True)
     col2.markdown(f"""
     <a style="text-decoration:none" target="_blank" href="https://twitter.com/intent/tweet?text={prediction.replace(' ', '%20')})">Tweet this</a>
     """, unsafe_allow_html=True)
